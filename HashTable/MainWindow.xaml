@@ -1,0 +1,18 @@
+﻿<Window x:Class="HashTable.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HashTable"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="100,0,0,0" VerticalAlignment="Center" Height="50" Width="152" Click="addBtn_Click"/>
+        <Button Content="Remove" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="152" Click="removeBtn_Click"/>
+        <Button Content="Show All" HorizontalAlignment="Left" VerticalAlignment="Center" Height="50" Width="152" Margin="557,0,0,0" Click="showBtn_Click"/>
+        <TextBox x:Name="txtValue" HorizontalAlignment="Left" Margin="164,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="545" Height="28"/>
+        <TextBox x:Name="txtKey" HorizontalAlignment="Left" Margin="164,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="545" Height="28" TextChanged="txtKey_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="100,95,0,0" TextWrapping="Wrap" Text="Key" VerticalAlignment="Top" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="100,138,0,0" TextWrapping="Wrap" Text="Value" VerticalAlignment="Top" FontSize="20"/>
+    </Grid>
+</Window>
